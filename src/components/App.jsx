@@ -1,6 +1,13 @@
+import Sidebar from "./Sidebar.jsx";
+
 function App() {
 
-  return;
+  return (
+
+    <Sidebar />
+    // <Form />
+    // <Preview />
+  );
 }
 
 export default App
