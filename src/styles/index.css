@@ -1,0 +1,24 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* COLORS */
+    /* color for page background */
+    --clr-background-main: #FFFFFF;
+    /* for sections like education experience ... */
+    --clr-backround-section: #EEF0F4;
+}
+
+body {
+
+    font-family: "Roboto", sans-serif, system-ui, "Segoe UI", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    background-color: var(--clr-background-main);
+
+    min-height: 100vh;
+}
