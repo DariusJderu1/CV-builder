@@ -1,4 +1,4 @@
-import websiteLogo from "../assets/logo.png";
+import websiteLogo from "/src/assets/logo.png";
 import { FaGithub } from "react-icons/fa";
 
 // to delete the inline style

@@ -1,5 +1,5 @@
-import Sidebar from "./Sidebar.jsx";
-import Form from "./Editor.jsx";
+import Sidebar from "./app/Sidebar.jsx";
+import Editor from "./app/Editor.jsx";
 
 function App() {
 
