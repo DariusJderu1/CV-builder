@@ -1,5 +1,5 @@
 import GeneralInfoForm from "../editor/GeneralInfoForm.jsx";
-// import ExperienceForm from "../editor/ExperienceForm.jsx";
+import ExperienceForm from "../editor/ExperienceForm.jsx";
 import EducationForm from "../editor/EducationForm.jsx";
 
 export default function Editor() {
@@ -9,6 +9,7 @@ export default function Editor() {
         <main>
             <GeneralInfoForm />
             <EducationForm />
+            <ExperienceForm />
         </main>
     );
 }
