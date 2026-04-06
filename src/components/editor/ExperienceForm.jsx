@@ -8,19 +8,15 @@ export default function ExperienceForm() {
         <section>
 
             <div>
-
                 <div>
                     <GiSuitcase />
                     <h2>Experience</h2>
                 </div>
 
                 <IoChevronUp />
-
             </div>
 
-
             <form>
-
                 <div>
                     <label htmlFor="job-title">Job Title</label>
                     <input type="text" id="job-title" placeholder="Enter Job Title" required />
@@ -52,7 +48,6 @@ export default function ExperienceForm() {
                 </div>
 
                 <button type="submit">Save</button>
-
             </form>
 
         </section>

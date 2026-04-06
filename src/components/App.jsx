@@ -1,5 +1,6 @@
 import Sidebar from "./app/Sidebar.jsx";
 import Editor from "./app/Editor.jsx";
+import Preview from "./app/Preview.jsx";
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Sidebar />
       <Editor />
+      <Preview />
     </>
   );
 }
