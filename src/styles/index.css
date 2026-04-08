@@ -9,9 +9,9 @@
 
     /* COLORS */
     /* color for page background */
-    --clr-background-main: #FFFFFF;
+    --clr-background-main: #EEF0F4;
     /* for sections like education experience ... */
-    --clr-backround-section: #EEF0F4;
+    --clr-backround-section: #FFFFFF;
 }
 
 body {
