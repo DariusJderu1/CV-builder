@@ -1,21 +1,23 @@
+import "../../styles/app/Sidebar.css";
+
 import websiteLogo from "/src/assets/logo.png";
 import { FaGithub } from "react-icons/fa";
 
-// to delete the inline style
 function Sidebar() {
 
     return (
 
-        <aside>
+        <aside className="sidebar-container">
 
-            <img style={{ width: "100px", height: "100px" }}
-            src={websiteLogo} />
+            <div>
+                <img src={websiteLogo} />
+                <h1>CV Generator</h1>
+            </div>
 
-            <h1>CV Generator</h1>
-
-            <p>DariusJderu1</p>
-
-            <FaGithub />
+            <div>
+                <p>DariusJderu1</p>
+                <FaGithub className="github-icon" />
+            </div>
 
         </aside>
     );
