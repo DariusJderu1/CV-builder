@@ -8,7 +8,7 @@ function App() {
   return (
     
     <div className="app-layout">
-      <div className="sidebar-container"><Sidebar /></div>
+      <Sidebar />
       <div className="editor-container"><Editor /></div>
       <div className="preview-container"><Preview /></div>
     </div>
