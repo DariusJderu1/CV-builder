@@ -10,7 +10,7 @@ function App() {
     <div className="app-layout">
       <Sidebar />
       <Editor />
-      <div className="preview-container"><Preview /></div>
+      <Preview />
     </div>
   );
 }
