@@ -6,4 +6,38 @@
     box-shadow: var(--shadow);
 
     width: 100%;
+
+    padding: 1.5rem;
+}
+
+.form-header {
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.form-title-group {
+
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; 
+
+    h2 {
+
+        font-size: var(--fs-lg);
+    }
+
+    svg {
+
+        flex-shrink: 0;
+        font-size: var(--fs-lg);
+    }
+}
+
+.form-expand-icon {
+
+    cursor: pointer;
+    font-size: var(--fs-lg);
+    font-weight: 800;
 }

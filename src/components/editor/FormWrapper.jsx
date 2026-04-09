@@ -7,14 +7,14 @@ export default function FormWrapper({children, icon, title}) {
 
         <section className="form-section-container">
 
-            <div>
-                <div>
+            <header className="form-header">
+                <div className="form-title-group">
                     {icon}
                     <h2>{title}</h2>
                 </div>
 
-                <IoChevronUp />
-            </div>
+                <IoChevronUp className="form-expand-icon"/>
+            </header>
 
             <div>
                 {children}

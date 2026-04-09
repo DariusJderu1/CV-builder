@@ -1,4 +1,4 @@
-import { IoPersonCircle } from "react-icons/io5";
+import { IoMdPerson } from "react-icons/io";
 import { CiEdit } from "react-icons/ci";
 import FormWrapper from "./FormWrapper";
 
@@ -6,7 +6,7 @@ export default function GeneralInfoForm() {
 
     return (
 
-        <FormWrapper icon={<IoPersonCircle />} title="General Information">
+        <FormWrapper icon={<IoMdPerson />} title="General Information">
 
             <form>
                 <div>
