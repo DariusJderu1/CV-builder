@@ -28,6 +28,8 @@ export default function GeneralInfoForm() {
                     <label htmlFor="address">Address</label>
                     <input type="text" id="address" placeholder="City, Country" />
                 </div>
+
+                <button type="submit">Save</button>
             </form>
 
 
