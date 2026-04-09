@@ -1,22 +1,13 @@
-import { IoPersonCircle, IoChevronUp } from "react-icons/io5";
+import { IoPersonCircle } from "react-icons/io5";
 import { CiEdit } from "react-icons/ci";
+import FormWrapper from "./FormWrapper";
 
 export default function GeneralInfoForm() {
 
     return (
 
-        <section className="general-info-form-container">
-            <div>
+        <FormWrapper icon={<IoPersonCircle />} title="General Information">
 
-                <div>
-                    <IoPersonCircle />
-                    <h2>General Information</h2>
-                </div>
-
-                <IoChevronUp />
-                
-            </div>
-            
             <form>
                 <div>
                     <label htmlFor="full-name">Full name</label>
@@ -37,15 +28,15 @@ export default function GeneralInfoForm() {
                     <label htmlFor="address">Address</label>
                     <input type="text" id="address" placeholder="City, Country" />
                 </div>
-
-                <button type="submit">Save</button>
             </form>
 
-            <div className="summary-view">
-                <button type="button" className="edit-button">
-                    <CiEdit /> Edit
+
+            <div>
+                <button>
+                     <CiEdit /> Edit
                 </button>
             </div>
-        </section>
+
+        </FormWrapper>
     );
 }
