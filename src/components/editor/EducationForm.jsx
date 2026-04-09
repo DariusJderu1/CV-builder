@@ -38,7 +38,7 @@ export default function EducationForm() {
 
             <div>
                 <button>
-                     <CiEdit /> Edit
+                    <CiEdit /> Edit
                 </button>
             </div>
 

@@ -35,7 +35,7 @@ export default function GeneralInfoForm() {
 
             <div>
                 <button>
-                     <CiEdit /> Edit
+                    <CiEdit /> Edit
                 </button>
             </div>
 

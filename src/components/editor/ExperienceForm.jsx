@@ -1,21 +1,13 @@
 import { GiSuitcase } from "react-icons/gi";
-import { IoChevronUp } from "react-icons/io5";
+import FormWrapper from "./FormWrapper";
+import { CiEdit } from "react-icons/ci";
 
 export default function ExperienceForm() {
 
     return (
 
-        <section>
-
-            <div>
-                <div>
-                    <GiSuitcase />
-                    <h2>Experience</h2>
-                </div>
-
-                <IoChevronUp />
-            </div>
-
+        <FormWrapper icon={<GiSuitcase />} title="Experience">
+        
             <form>
                 <div>
                     <label htmlFor="job-title">Job Title</label>
@@ -50,6 +42,13 @@ export default function ExperienceForm() {
                 <button type="submit">Save</button>
             </form>
 
-        </section>
+
+            <div>
+                <button>
+                    <CiEdit /> Edit
+                </button>
+            </div>
+
+        </FormWrapper>
     );
 }
