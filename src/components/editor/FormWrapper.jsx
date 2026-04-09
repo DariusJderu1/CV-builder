@@ -1,10 +1,11 @@
 import { IoChevronUp } from "react-icons/io5";
+import "../../styles/editor/FormWrapper.css";
 
 export default function FormWrapper({children, icon, title}) {
 
     return (
 
-        <section>
+        <section className="form-section-container">
 
             <div>
                 <div>

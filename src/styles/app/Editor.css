@@ -1,8 +1,10 @@
 .editor-container {
 
+    padding: 0 0.7rem;
+
     flex: 1;
     /* to modify this probably */
-    min-width: 250px;
+    min-width: 320px;
     align-self: flex-start;
 
     display: flex;
