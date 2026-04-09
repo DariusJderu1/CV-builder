@@ -1,11 +1,11 @@
 import { IoPersonCircle, IoChevronUp } from "react-icons/io5";
+import { CiEdit } from "react-icons/ci";
 
 export default function GeneralInfoForm() {
 
     return (
 
-        <section>
-
+        <section className="general-info-form-container">
             <div>
 
                 <div>
@@ -18,7 +18,6 @@ export default function GeneralInfoForm() {
             </div>
             
             <form>
-
                 <div>
                     <label htmlFor="full-name">Full name</label>
                     <input type="text" id="full-name" placeholder="First and last name" required/>
@@ -40,9 +39,13 @@ export default function GeneralInfoForm() {
                 </div>
 
                 <button type="submit">Save</button>
-
             </form>
 
+            <div className="summary-view">
+                <button type="button" className="edit-button">
+                    <CiEdit /> Edit
+                </button>
+            </div>
         </section>
     );
 }
