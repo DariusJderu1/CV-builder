@@ -27,10 +27,10 @@
     --fs-sm: clamp(0.875rem, 0.8rem + 0.3vw, 1rem);
     
     /* Base: Your default text, standard inputs, standard buttons */
-    --fs-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+    --fs-base: clamp(1rem, 0.95rem + 0.25vw, 1.3rem);
     
     /* Large: Editor section headers ("General Information", "Save your resume") */
-    --fs-lg: clamp(1.25rem, 1.2rem + 0.5vw, 1.65rem);
+    --fs-lg: clamp(1.25rem, 1.2rem + 0.5vw, 1.7rem);
     
     /* Extra Large: Main branding/titles ("CV GENERATOR") */
     --fs-xl: clamp(1.5rem, 1.3rem + 1vw, 1.9rem);
