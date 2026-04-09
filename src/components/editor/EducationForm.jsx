@@ -1,29 +1,18 @@
-import { IoSchool, IoChevronUp } from "react-icons/io5";
+import { IoSchool } from "react-icons/io5";
+import { CiEdit } from "react-icons/ci";
+import FormWrapper from "./FormWrapper";
 
 export default function EducationForm() {
 
     return (
 
-        <section>
-
-            <div>
-
-                <div>
-                    <IoSchool />
-                    <h2>Education</h2>
-                </div>
-
-                <IoChevronUp />
-                
-            </div>
+        <FormWrapper icon={<IoSchool />} title="Education">
 
             <form>
-
                 <div>
                     <label htmlFor="school">School</label>
                     <input type="text" id="school" placeholder="School / University" required />
                 </div>
-
                 <div>
                     <label htmlFor="degree">Degree</label>
                     <input type="text" id="degree" placeholder="Degree / Field of study" required/>
@@ -45,9 +34,14 @@ export default function EducationForm() {
                 </div>
 
                 <button type="submit">Save</button>
-
             </form>
 
-        </section>
+            <div>
+                <button>
+                     <CiEdit /> Edit
+                </button>
+            </div>
+
+        </FormWrapper>
     );
 }
