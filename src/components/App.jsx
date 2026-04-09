@@ -9,7 +9,7 @@ function App() {
     
     <div className="app-layout">
       <Sidebar />
-      <div className="editor-container"><Editor /></div>
+      <Editor />
       <div className="preview-container"><Preview /></div>
     </div>
   );

@@ -7,7 +7,7 @@ export default function Editor() {
 
     return (
 
-        <main className="main-container">
+        <main className="editor-container">
             <GeneralInfoForm />
             <EducationForm />
             <ExperienceForm />
