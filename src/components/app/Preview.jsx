@@ -42,7 +42,7 @@ export default function Preview({resumeData}) {
 
                         <div className="preview-entry-content">
                             <h3>{resumeData.experience.company}</h3>
-                            <p>{resumeData.experience.position}</p>
+                            <p>{resumeData.experience.jobTitle}</p>
                             <p>{resumeData.experience.description}</p>
                         </div>
                     </div>
