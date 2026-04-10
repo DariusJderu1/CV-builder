@@ -7,7 +7,7 @@ aside.sidebar-container {
 
     text-align: center;
 
-    background-color: var(--clr-backround-section);
+    background-color: var(--clr-background-section);
 
     -webkit-box-shadow: var(--webkit-shadow);
     box-shadow: var(--shadow);

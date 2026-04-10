@@ -1,0 +1,144 @@
+/* Page */
+.preview-shell {
+
+    flex: 1;
+
+    min-width: 420px;
+    padding: 2.8rem 0;
+
+    display: flex;
+    justify-content: center;
+
+    overflow-y: auto;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+
+.preview-page {
+
+    width: min(100%, 850px);
+    min-height: 1120px;
+
+    background-color: var(--clr-background-section);
+
+    -webkit-box-shadow: var(--webkit-shadow);
+    box-shadow: var(--shadow);
+    color: #111111;
+}
+/* Page */
+
+
+/* Header */
+.preview-header {
+
+    background-color: var(--clr-preview-brand);
+    color: #ffffff;
+
+    padding: 2.8rem 3rem 2.4rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+
+    h1 {
+
+        font-size: var(--fs-xl);
+        font-weight: 700;
+        line-height: 1.1;
+        text-align: center;
+    }
+}
+
+.preview-contact-row {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 0.8rem 1.6rem;
+    font-size: var(--fs-sm);
+
+    span  {
+
+        display: flex;
+        align-items: center;
+        gap: 0.45rem;
+    }
+
+    svg {
+
+        font-size: var(--fs-sm)
+    }
+}
+/* Header */
+
+
+/* Section */
+.preview-section {
+
+    padding: 2rem 2rem;
+
+    &:last-child {
+
+        padding-bottom: 4rem;
+    }
+
+    h2 {
+
+        margin-bottom: 1.5rem;
+        padding: 0.45rem 0;
+
+        background-color: var(--clr-preview-section-title-bg);
+        color: var(--clr-preview-brand);
+        
+        text-align: center;
+        font-size: var(--fs-lg);
+        font-weight: 700;
+    }
+}
+
+.preview-entry {
+
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.preview-section .preview-entry + .preview-entry {
+
+    margin-top: 2rem;
+}
+
+.preview-entry-meta {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    
+    font-size: var(--fs-base);
+    line-height: 1.2;
+}
+
+.preview-entry-content {
+
+    h3 {
+
+        margin-bottom: 0.3rem;
+        font-size: var(--fs-base);
+        font-weight: 700;
+    }
+
+    p {
+
+        font-size: var(--fs-base);
+        line-height: 1.35;
+    }
+
+    p + p {
+
+        margin-top: 0.35rem;
+    }
+}
+/* Section */

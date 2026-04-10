@@ -1,6 +1,6 @@
 .form-section-container {
 
-    background-color: var(--clr-backround-section);
+    background-color: var(--clr-background-section);
     border-radius: var(--border-radius);
     -webkit-box-shadow: var(--webkit-shadow);
     box-shadow: var(--shadow);

@@ -11,7 +11,9 @@
     /* color for page background */
     --clr-background-main: #EEF0F4;
     /* for sections like education experience ... */
-    --clr-backround-section: #FFFFFF;
+    --clr-background-section: #FFFFFF;
+    --clr-preview-brand: #0e3b53;
+    --clr-preview-section-title-bg: #ebf0f3;
 
     --webkit-shadow: 0px 0px 15px -5px #000000; 
     --shadow: 0px 0px 15px -5px #000000;
@@ -24,7 +26,7 @@
     --fs-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem); 
     
     /* Small: For secondary text, minor button text */
-    --fs-sm: clamp(0.875rem, 0.8rem + 0.3vw, 1rem);
+    --fs-sm: clamp(0.9rem, 0.8rem + 0.3vw, 1rem);
     
     /* Base: Your default text, standard inputs, standard buttons */
     --fs-base: clamp(1rem, 0.95rem + 0.25vw, 1.3rem);
