@@ -1,19 +1,18 @@
 import { IoMail, IoCall, IoLocationSharp } from "react-icons/io5";
 import "../../styles/app/Preview.css";
 
-export default function Preview() {
+export default function Preview({resumeData}) {
 
     return (
 
         <section className="preview-shell">
-            
             <div className="preview-page">
                 <header className="preview-header">
-                    <h1>Josephine Meyers</h1>
+                    <h1>{resumeData.generalInformation.fullName}</h1>
                     <div className="preview-contact-row">
-                        <span><IoMail /> josephine.meyers@mail.co.uk</span>
-                        <span><IoCall /> +44 3245 5521 5521</span>
-                        <span><IoLocationSharp /> London, UK</span>
+                        <span><IoMail /> {resumeData.generalInformation.email}</span>
+                        <span><IoCall /> {resumeData.generalInformation.phone}</span>
+                        <span><IoLocationSharp /> {resumeData.generalInformation.address}</span>
                     </div>
                 </header>
 
@@ -22,13 +21,13 @@ export default function Preview() {
                     
                     <div className="preview-entry">
                         <div className="preview-entry-meta">
-                            <span>08/2020 - present</span>
-                            <span>New York City, US</span>
+                            <span>{resumeData.education.startDate} - {resumeData.education.endDate}</span>
+                            <span>{resumeData.education.location}</span>
                         </div>
                         
                         <div className="preview-entry-content">
-                            <h3>London City University</h3>
-                            <p>Bachelors in Economics</p>
+                            <h3>{resumeData.education.school}</h3>
+                            <p>{resumeData.education.degree}</p>
                         </div>
                     </div>
                 </section>
@@ -38,23 +37,18 @@ export default function Preview() {
                     
                     <div className="preview-entry">
                         <div className="preview-entry-meta">
-                            <span>08/2020 - present</span>
-                            <span>New York City, US</span>
+                            <span>{resumeData.experience.startDate} - {resumeData.experience.endDate}</span>
+                            <span>{resumeData.experience.location}</span>
                         </div>
 
                         <div className="preview-entry-content">
-                            <h3>Umbrella Inc.</h3>
-                            <p>UX & UI Designer</p>
-                            <p>
-                                Designed and prototyped user interface patterns for various 
-                                clients in various industries, ranging from self-service apps 
-                                within the telecommunications-sector to mobile games for IOS and Android
-                            </p>
+                            <h3>{resumeData.experience.company}</h3>
+                            <p>{resumeData.experience.position}</p>
+                            <p>{resumeData.experience.description}</p>
                         </div>
                     </div>
                 </section>
             </div>
-
         </section>
     );
 }
