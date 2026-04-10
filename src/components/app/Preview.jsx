@@ -8,7 +8,6 @@ export default function Preview() {
         <section className="preview-shell">
             
             <div className="preview-page">
-                
                 <header className="preview-header">
                     <h1>Josephine Meyers</h1>
                     <div className="preview-contact-row">
@@ -53,25 +52,7 @@ export default function Preview() {
                             </p>
                         </div>
                     </div>
-
-                    <div className="preview-entry">
-                        <div className="preview-entry-meta">
-                            <span>08/2020 - present</span>
-                            <span>New York City, US</span>
-                        </div>
-
-                        <div className="preview-entry-content">
-                            <h3>Umbrella Inc.</h3>
-                            <p>UX & UI Designer</p>
-                            <p>
-                                Designed and prototyped user interface patterns for various 
-                                clients in various industries, ranging from self-service apps 
-                                within the telecommunications-sector to mobile games for IOS and Android
-                            </p>
-                        </div>
-                    </div>
                 </section>
-
             </div>
 
         </section>

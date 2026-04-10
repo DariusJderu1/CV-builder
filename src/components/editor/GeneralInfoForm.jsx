@@ -13,11 +13,11 @@ export default function GeneralInfoForm() {
         setIsExpanded(!isExpanded);
     }
     
-    // function handleSubmit(e) {
+    function handleSubmit(e) {
 
-    //     e.preventDefault();
+        e.preventDefault();
         
-    // }
+    }
 
     return (
 
@@ -25,7 +25,7 @@ export default function GeneralInfoForm() {
 
             {isExpanded && (
 
-                <form className="edit-form">
+                <form className="edit-form" onSubmit={handleSubmit}>
                     <div className="input-group">
                         <label htmlFor="full-name">Full name</label>
                         <input type="text" id="full-name" placeholder="First and last name" required/>

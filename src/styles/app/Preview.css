@@ -97,6 +97,11 @@
         font-size: var(--fs-lg);
         font-weight: 700;
     }
+
+    & + .preview-section {
+
+        margin-top: 2.5rem;
+    }
 }
 
 .preview-entry {
@@ -105,11 +110,6 @@
     grid-template-columns: 160px 1fr;
     gap: 4rem;
     align-items: start;
-}
-
-.preview-section .preview-entry + .preview-entry {
-
-    margin-top: 2rem;
 }
 
 .preview-entry-meta {
