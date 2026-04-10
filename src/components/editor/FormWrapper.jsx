@@ -1,7 +1,15 @@
-import { IoChevronUp } from "react-icons/io5";
+import { IoChevronUp, IoChevronDown } from "react-icons/io5";
 import "../../styles/editor/FormWrapper.css";
+import { useState } from "react";
 
 export default function FormWrapper({children, icon, title}) {
+
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    function handleExpand() {
+
+        setIsExpanded(!isExpanded);
+    }
 
     return (
 
@@ -13,7 +21,9 @@ export default function FormWrapper({children, icon, title}) {
                     <h2>{title}</h2>
                 </div>
 
-                <IoChevronUp className="form-expand-icon"/>
+                <button onClick={handleExpand}>
+                    {isExpanded ? <IoChevronUp /> : <IoChevronDown />}
+                </button>
             </header>
 
             <div>
