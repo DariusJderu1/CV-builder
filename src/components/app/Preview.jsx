@@ -1,4 +1,4 @@
-import { IoMail, IoCall, IoLocationSharp } from "react-icons/io5";
+import { IoMail, IoLocationSharp } from "react-icons/io5";
 import "../../styles/app/Preview.css";
 
 export default function Preview({resumeData}) {
@@ -11,7 +11,6 @@ export default function Preview({resumeData}) {
                     <h1>{resumeData.generalInformation.fullName}</h1>
                     <div className="preview-contact-row">
                         <span><IoMail /> {resumeData.generalInformation.email}</span>
-                        <span><IoCall /> {resumeData.generalInformation.phone}</span>
                         <span><IoLocationSharp /> {resumeData.generalInformation.address}</span>
                     </div>
                 </header>
