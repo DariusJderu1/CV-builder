@@ -3,7 +3,6 @@ import Editor from "./app/Editor.jsx";
 import Preview from "./app/Preview.jsx";
 import "../styles/App.css";
 import { useState } from "react";
-import GeneralInfoForm from "./editor/GeneralInfoForm.jsx";
 
 function App() {
 

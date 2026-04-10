@@ -37,7 +37,6 @@ export default function Preview({resumeData}) {
                     <div className="preview-entry">
                         <div className="preview-entry-meta">
                             <span>{resumeData.experience.startDate} - {resumeData.experience.endDate}</span>
-                            <span>{resumeData.experience.location}</span>
                         </div>
 
                         <div className="preview-entry-content">
