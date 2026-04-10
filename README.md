@@ -2,7 +2,7 @@
 
 A browser-based CV builder application built with React and CSS. It lets users fill in CV sections and display the saved data in a preview.
 
-Live Demo: Not added yet.
+Live Demo: https://cv-builder-darius.netlify.app/
 
 ## Technologies Used
 
