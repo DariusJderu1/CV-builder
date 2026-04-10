@@ -2,12 +2,20 @@ import { IoMdPerson } from "react-icons/io";
 import { CiEdit } from "react-icons/ci";
 import FormWrapper from "./FormWrapper";
 import "../../styles/editor/Forms.css";
+import { useState } from "react";
 
 export default function GeneralInfoForm() {
 
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    function handleExpand() {
+
+        setIsExpanded(!isExpanded);
+    }
+
     return (
 
-        <FormWrapper icon={<IoMdPerson />} title="General Information">
+        <FormWrapper icon={<IoMdPerson />} title="General Information" isExpanded={isExpanded} handleExpand={handleExpand}>
 
             <form className="edit-form">
                 <div className="input-group">
@@ -29,11 +37,14 @@ export default function GeneralInfoForm() {
             </form>
 
 
-            <div className="summary-view">
-                <button className="edit-btn">
-                    <CiEdit className="edit-icon"/> Edit
-                </button>
-            </div>
+            {!isExpanded && (
+
+                <div className="summary-view">
+                    <button className="edit-btn">
+                        <CiEdit className="edit-icon"/> Edit
+                    </button>
+                </div>
+            )}
 
         </FormWrapper>
     );

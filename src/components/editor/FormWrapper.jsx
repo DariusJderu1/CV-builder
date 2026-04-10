@@ -1,15 +1,7 @@
 import { IoChevronUp, IoChevronDown } from "react-icons/io5";
 import "../../styles/editor/FormWrapper.css";
-import { useState } from "react";
 
-export default function FormWrapper({children, icon, title}) {
-
-    const [isExpanded, setIsExpanded] = useState(false);
-
-    function handleExpand() {
-
-        setIsExpanded(!isExpanded);
-    }
+export default function FormWrapper({children, icon, title, isExpanded, handleExpand}) {
 
     return (
 

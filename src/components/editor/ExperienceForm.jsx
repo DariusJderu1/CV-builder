@@ -2,12 +2,20 @@ import { GiSuitcase } from "react-icons/gi";
 import FormWrapper from "./FormWrapper";
 import { CiEdit } from "react-icons/ci";
 import "../../styles/editor/Forms.css";
+import { useState } from "react";
 
 export default function ExperienceForm() {
 
+    const [isExpanded, setIsExpanded] = useState(false);
+        
+    function handleExpand() {
+
+        setIsExpanded(!isExpanded);
+    }
+
     return (
 
-        <FormWrapper icon={<GiSuitcase />} title="Experience">
+        <FormWrapper icon={<GiSuitcase />} title="Experience" isExpanded={isExpanded} handleExpand={handleExpand}>
         
             <form className="edit-form">
                 <div className="input-group">
@@ -44,11 +52,14 @@ export default function ExperienceForm() {
             </form>
 
 
-            <div className="summary-view">
-                <button className="edit-btn">
-                    <CiEdit className="edit-icon"/> Edit
-                </button>
-            </div>
+            {!isExpanded && (
+
+                <div className="summary-view">
+                    <button className="edit-btn">
+                        <CiEdit className="edit-icon"/> Edit
+                    </button>
+                </div>
+            )}
 
         </FormWrapper>
     );
