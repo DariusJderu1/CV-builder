@@ -24,7 +24,7 @@ export default function GeneralInfoForm() {
         <FormWrapper icon={<IoMdPerson />} title="General Information" isExpanded={isExpanded} handleExpand={handleExpand}>
 
             {isExpanded && (
-                
+
                 <form className="edit-form">
                     <div className="input-group">
                         <label htmlFor="full-name">Full name</label>
@@ -49,7 +49,7 @@ export default function GeneralInfoForm() {
             {!isExpanded && (
 
                 <div className="summary-view">
-                    <button className="edit-btn">
+                    <button className="edit-btn" onClick={handleExpand}>
                         <CiEdit className="edit-icon"/> Edit
                     </button>
                 </div>

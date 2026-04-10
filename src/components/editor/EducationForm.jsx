@@ -18,7 +18,7 @@ export default function EducationForm() {
         <FormWrapper icon={<IoSchool />} title="Education" isExpanded={isExpanded} handleExpand={handleExpand}>
 
             {isExpanded && (
-                
+
                 <form className="edit-form">
                     <div className="input-group">
                         <label htmlFor="school">School</label>
@@ -56,6 +56,7 @@ export default function EducationForm() {
                     </button>
                 </div>
             )}
+            
         </FormWrapper>
     );
 }
