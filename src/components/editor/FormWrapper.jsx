@@ -26,9 +26,9 @@ export default function FormWrapper({children, icon, title}) {
                 </button>
             </header>
 
-            <div>
-                {children}
-            </div>
+            {isExpanded && (
+                <div>{children}</div> 
+            )}
 
         </section>
     );
